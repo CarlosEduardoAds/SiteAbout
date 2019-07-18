@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="cont1">
+      <header>
+        <nav class='cabecalho'>
+          <div class="menu" id="mymenu">
+            <img  src="img/logo.png" style="width:150px; float:left"/>
+            <div class="topnav" id="myTopnav">
+              <a href="index.html">Home</a>
+              <a href="sobre.html" class="active">Sobre</a>
+              <a href="servico.html">Serviços</a>
+              <a href="cliente.html">Clientes</a>
+              <a href="contato.php">Fale conosco</a>
+              <a style="float:right;  color:red" href="restrito.php">Restrito</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                <script>
+                function myFunction() {
+                  var x = document.getElementById("myTopnav");
+                  if (x.className === "topnav") {
+                    x.className += " responsive";
+                  } else {
+                    x.className = "topnav";
+                  }
+                }
+                </script>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <div class="cont2">
+      <img style="width:100%; height: 400px;;"src="img/trasmissao.jpg ">
+    </div>
+    <div class="cont1">
+      <div class="quem somos">
+        <h1 style="color: #540000;">Quem somos</h2>
+        <p>Fundada em 2009 em São Paulo, a empresa About Brasil
+           opera nos mercados de eletricidade e transporte.
+         </p>
+        <p>Temos uma ampla experiência em sistemas de energia elétrica, incluindo geração,
+           transmissão e distribuição, em todos os níveis de tensão, desde sistemas industriais
+           até linhas de 765KV.
+        </p>
+        <p>Temos uma equipe técnica sólida, especializada em projeto básico e executivo para
+          centrais elétricas, subestações e parques eólicos.
+        </p>
+      </div>
+      <div style="margin-top:10%;"class="nossa missao">
+        <h1 style="color: #540000;">Nossa Missão e Visão</h1>
+        <p>Nossa missão é proporcionar serviços de engenharia
+          que cumpram os requisitos de qualidade dos nossos clientes
+          e promovam o desenvolvimento da sociedade
+        </p>
+        <p>Cremos que a capacitação competência e profissionalismo em projetos de engenharia
+          são essenciais para o futuro de nosso país.
+        </p>
+      </div>
+      <div style="margin-top:10%;" class="atendimento personalizado">
+        <h1 style="color: #540000;">Atendimento Personalizado</h1>
+        <table >
+          <tr>
+            <th style="color: #540000;">Soluções em Painéis Elétricos</th>
+            <th style="color: #540000;">Treinamentos</th>
+          </tr>
+          <tr>
+            <td style="text-align: center;">
+              Montagem de painéis elétricos
+            </td>
+            <td style="Text-align:center;">
+              Proteção de sistemas elétricos de potência
+            </td>
+          </tr>
+          <tr>
+            <td style="Text-align:center;">Ensaios elétricos</td>
+            <td style="Text-align:center;">Sistemas de controle para subestações</td>
+          </tr>
+          <tr>
+            <td style="Text-align:center;">TAF (Teste de aceitação em fábrica)</td>
+
+            <td style="Text-align:center;">Sistemas de controle para centrais elétricas</td>
+          </tr>
+          <tr>
+            <td style="Text-align:center;">TAC (Teste de aceitação em campo)</td>
+            <td style="Text-align:center;">Sistemas de controle para controle de sistemas industriais</td>
+          </tr>
+        </table>
+        <div style="margin-top:10%;"class="Análise de Estudo de Seletividade">
+          <h1 style="color: #540000;">Análise de Estudo de Seletividade</h1>
+          <p>Estudos de proteção para sistemas de geração, transmissão, distribuição e sistemas industriais</p>
+          <p>Acompanhamento e suporte em testes RTDS e análises de resultados</p>
+          <p>Estudos de análise de ocorrências</p>
+          <p>Criação de macros para testes ponto a ponto de linhas de transmissão com arquivos COMTRADE</p>
+        </div>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
+    <div class="footer">
+      <h3>Fale conosco</h3>
+      <h4>Telefone: +55 11 5972-4190 </h4>
+      <h4>Email: contato@aboutbrasil.com.br</h4>
+      <br>
+      <h4>Rua Lauzane, 585 - Capela do Socorro - São Paulo/S</h4>
+      <h4>CEP: 04782-010</h4>
+    </div>
+  </body>
+</html>

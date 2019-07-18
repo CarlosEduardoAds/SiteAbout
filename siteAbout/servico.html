@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="cont1">
+      <header>
+        <nav class='cabecalho'>
+          <div class="menu" id="mymenu">
+            <img  src="img/logo.png" style="width:150px; float:left"/>
+            <div class="topnav" id="myTopnav">
+              <a href="index.html">Home</a>
+              <a href="sobre.html">Sobre</a>
+              <a href="servico.html" class="active">Serviços</a>
+              <a href="cliente.html">Clientes</a>
+              <a href="contato.php">Fale conosco</a>
+              <a style="float:right;  color:red" href="restrito.php">Restrito</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                <script>
+                function myFunction() {
+                  var x = document.getElementById("myTopnav");
+                  if (x.className === "topnav") {
+                    x.className += " responsive";
+                  } else {
+                    x.className = "topnav";
+                  }
+                }
+                </script>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <div class="cont1">
+      <h1 style="color:#540000">Nossos serviços</h1>
+
+      <table >
+        <tr>
+          <th style="color:#540000">Montagem de Painel Elétrico</th>
+          <th style="color:#540000">Serviços gerais</th>
+        </tr>
+        <tr>
+          <td>Montagem de painéis elétricos em todos os níveis de tensão</td>
+          <td>Lançamento de cabos elétricos</td>
+        </tr>
+        <tr>
+          <td>Montagem de quadro elétrico</td>
+          <td>Lançamento de cabos opticos</td>
+        </tr>
+        <tr>
+          <td>Montagem de quadro de comandos</td>
+          <td>Lançamento de cordões opticos</td>
+        </tr>
+        <tr>
+          <td>Montagem de infraestrutura</td>
+          <td>Instalações de circuitos elétricos</td>
+        </tr>
+        <tr>
+          <td>Fornecimento de Materiais, Equipamentos e Painéis</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th style="color:#540000">Teste e comissionamento elétrico</th>
+          <th style="color:#540000">Comissionamento e Teste de Fábrica de Sistema</th >
+        </tr>
+        <tr>
+          <td>missionamento completo de Sistemas de Proteção, Automação, Controle e Telecom em subestações</td>
+          <td>Testes completos de Sistemas de Proteção, Automação, Controle e Telecom em subestações</td>
+        </tr>
+        <tr>
+          <td>Comissionamento completo de cabos de força, comando e controle</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Comissionamento completo de cubículos de média tensão até 36kV</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Manutenções Preventivas e Preditivas em equipamentos e subestações</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Redes de Distribuição de Energia Aérea Convencional e Compacta até 34,5kV</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Teste de resistência Ohmica</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Teste de Isolação</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th style="color:#540000">Configuração de sistema</th>
+          <th style="color:#540000">Fibra ópticas</th>
+        </tr>
+        <tr>
+          <td>Configuração de Sistemas Supervisórios e Parametrização de IEDs</td>
+          <td>Fusão de fibra óptica</td>
+        </tr>
+        <tr>
+          <td>Parametrização de relés de proteção</td>
+          <td>Certificações de fibra ópticas</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Conectorização de fibra óptica</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Fornecimento de materiais relacionados a fibra ópticas, cordões, conectores, DIOs.</td>
+        </tr>
+        <tr>
+          <th style="color:#540000">Engenharia</th>
+          <th style="color:#540000">Outros</th>
+        </tr>
+        <tr>
+          <td>Elaboração de Projetos Elétrico</td>
+          <td>Operação Assistida</td>
+        </tr>
+        <tr>
+          <td>Elaboração de Diagramas Lógicos</td>
+          <td>Treinamentos</td>
+        </tr>
+        <tr>
+          <td>Elaboração de Diagrama Funcional</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Elaboração de Diagrama Construtivo</td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
+    <div class="footer">
+      <h3>Fale conosco</h3>
+      <h4>Telefone: +55 11 5972-4190 </h4>
+      <h4>Email: contato@aboutbrasil.com.br</h4>
+      <br>
+      <h4>Rua Lauzane, 585 - Capela do Socorro - São Paulo/S</h4>
+      <h4>CEP: 04782-010</h4>
+    </div>
+  </body>
+</html>

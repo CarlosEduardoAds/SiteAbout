@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+      <div class="cont1">
+      <header>
+        <nav class='cabecalho'>
+          <div class="menu" id="mymenu">
+            <img  src="img/logo.png" style="width:150px; float:left"/>
+            <div class="topnav" id="myTopnav">
+              <a href="index.html" class="active">Home</a>
+              <a href="sobre.html">Sobre</a>
+              <a href="servico.html">Serviços</a>
+              <a href="cliente.html">Clientes</a>
+              <a href="contato.php">Fale conosco</a>
+              <a style="float:right;  color:red" href="restrito.php">Restrito</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                <script>
+                function myFunction() {
+                  var x = document.getElementById("myTopnav");
+                  if (x.className === "topnav") {
+                    x.className += " responsive";
+                  } else {
+                    x.className = "topnav";
+                  }
+                }
+                </script>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <div class="cont2">
+      <div class="container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img/img1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img/img2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade" >
+          <div class="numbertext">3 / 3</div>
+          <img src="img/img1.jpg" style="width:100%">
+        </div>
+        <p style="margin-top:-15px;"id="caption"></p>
+      </div>
+      <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+      </script>
+    </div>
+      <div class="cont1">
+        <h1>Nossa linha de produtos e soluções</h1>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <img src="img/projetos.jpg" alt="Jane" style="width:100%">
+            <div class="container">
+              <h2>Projetos de Painéis Elétricos</h2>
+              <p>Engenheiros eletricistas e projetistas desenvolvem e orçam seu projeto de painel elétrico, considerando todos os componentes necessários, requisitos técnicos e de segurança, entregando um painel elétrico personalizado.</p>
+              <p>Já possui projeto?</p>
+              <p>Nossa equipe irá validar seu projeto e efetuar o orçamento do painel elétrico, garantindo a segurança e a qualidade dentro do melhor custo e benefício. </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="img/fabricacao.jpg" alt="Mike" style="width:100%">
+            <div class="container">
+              <h2>Fabricação e <br> Montagem</h2>
+              <p>Seu projeto de painel elétrico é montado por equipe técnica experiente, treinada e acompanhada em todas as etapas por profissionais do setor elétrico e/ou pelos engenheiros eletricistas da About Brasil.</p>
+              <p>Os componentes são todos identificados e seu painel é entregue devidamente documentado</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="img/orientacao.jpg" alt="John" style="width:100%; border-radius: 10px;">
+            <div class="container">
+              <h2>Orientações e Suporte Técnico</h2>
+              <p>Oferecemos o suporte técnico de engenheiros eletricistas e técnicos em eletromecânica para apoiá-lo na sua necessidade e/ou na especificação do projeto de painel elétrico, com o objetivo de otimizar e agilizar o projeto e a montagem dos painéis.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    <div class="footer">
+      <h3>Fale conosco</h3>
+      <h4>Telefone: +55 11 5972-4190 </h4>
+      <h4>Email: contato@aboutbrasil.com.br</h4>
+      <br>
+      <h4>Rua Lauzane, 585 - Capela do Socorro - São Paulo/S</h4>
+      <h4>CEP: 04782-010</h4>
+    </div>
+  </body>
+</html>

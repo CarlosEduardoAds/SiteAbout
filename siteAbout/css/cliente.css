@@ -1,0 +1,195 @@
+/*texto*/
+h1{
+  color:black;
+  text-transform: uppercase;
+  font-family: monospace;
+  text-align: center;
+  font-size: 30px
+}
+h2{
+  color:black;
+  font-family: monospace;
+  text-align: center;
+}
+h3{
+  color:#696969;
+  text-align: center;
+
+}
+h4{
+  color:#808080;
+  text-align: center;
+}
+p{
+  color: black;
+  font-family: monospace;
+  text-align: center;
+}
+/*fim texto*/
+/*corpo*/
+body {
+  background-color: ;
+  min-height: 100%;
+  position: relative;
+  width: 100%;
+  margin:auto;
+}
+
+.box{
+  align-items: left;
+  display: inline-table;
+  margin-left: 32px;
+  width: 290px;
+  height: 250px;
+}
+
+.alinharfoto{
+  align-items: left;
+  display: inline-table;
+  margin-left: 20px;
+  width: 290px;
+  height: 250px;
+}
+.cont1{
+  min-height: 100%;
+  position: relative;
+  width: 100%;
+  max-width:1000px;
+  margin:auto;
+}
+.cont2{
+  max-width:100%;
+  width: 60%;
+  margin:auto;
+}
+
+.footer {
+  float:left;
+  display:table;
+  width:100%;
+  background-color:#DFDFDF;
+  padding-bottom:40px;
+}
+/*fim corpo*/
+
+/*fale conosco*/
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical ;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+/*fim fale conosco*/
+/*slides*/
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -20px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  margin-left: 240px;
+  display: inline-block;
+  align-items: center;
+  width: 15.66%;
+}
+.column2 {
+
+  display: inline-block;
+  align-items: center;
+  width: 15.66%;
+}
+.column3 {
+
+  display: inline-block;
+  align-items: center;
+  width: 15.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+/*fim slide*/
+#mapa {
+       height:400px;
+       width:400px;
+}

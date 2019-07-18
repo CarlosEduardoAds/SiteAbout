@@ -1,0 +1,14 @@
+table{
+width: 100%;
+max-width: 100%;
+border:none;
+border-spacing: 10px;
+}
+th{
+  font-size: 25px;
+  text-align: center;
+}
+td{
+  text-align: center;
+  font-size: 15px;
+}
